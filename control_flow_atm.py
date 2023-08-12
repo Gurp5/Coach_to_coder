@@ -3,7 +3,7 @@ print("What is your 4 digit pin number please?")
 result = input()
 withdrawn = "withdraw"
 deposit_amount = "deposit"
-pin = 1234
+pin = 1234  
 if int(result) == int(pin):
     balance = int(1000)
     string_balance = str(balance)
@@ -26,5 +26,5 @@ if int(result) == int(pin):
             print("Your updated balance is =" + " " + new_balance)
           
 else:
-    print("please try again, the pin entered is incorrect. Enter carefully as you have 2 more goes.")
+    print("please try again! the pin entered is incorrect. Enter carefully as you have 2 more goes.")
     print("if all 3 attempts have been made your card will be blocked for security reasons.")
