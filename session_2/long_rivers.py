@@ -42,3 +42,11 @@ for river in rivers:
      river_name = river["name"]
      river_length_miles = river["length"]
      print(f"river_name is {river_length_miles*1.6}km in length")
+
+# Extra: create a sentance using the data provided in the list and dictionaries
+
+for river in rivers:
+    river_name = river["name"]
+    river_length_miles = river["length"]
+    print(f"The river {river_name} is a very nice river and is {river_length_miles}km long!")
+
