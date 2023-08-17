@@ -13,10 +13,10 @@ Implement a loop to print each river's name.
 Calculate and display the total length of all rivers.
 Print the names of rivers starting with the letter "M."
 Present river lengths in kilometers, converted from miles.
-Key Learnings
-Throughout this project, I deepened my understanding of:
 
-**Python syntax and logical structures**
+**Key Learnings**
+Throughout this project, I deepened my understanding of:
+Python syntax and logical structures
 Handling user inputs and ensuring their validity
 Employing conditional statements for control flow
 Embracing collaborative coding within the Coach to Coder community
