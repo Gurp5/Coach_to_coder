@@ -10,7 +10,7 @@ As part of this project, I tackle a series of tasks that involve processing empl
 2. Calculating the combined years of experience of all employees.
 3. Collecting details of employees without email addresses.
 4. Comparing salaries between the Product and Business departments.
-5. 5. Calculating the average salary for employees over 30 years of age.
+5. Calculating the average salary for employees over 30 years of age.
 
 I've also extended the project to cover additional challenges:
 
