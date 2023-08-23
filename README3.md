@@ -49,7 +49,7 @@ Throughout this project, I've enhanced my skills in:
 
 Your feedback and suggestions are invaluable to my growth as a developer. Feel free to reach out:
 
-- Email: your.email@example.com
+- Email: gurps4709@gmail.com
 - GitHub: [Gurp5]((https://github.com/Gurp5))
 
 Thank you for exploring my project!
