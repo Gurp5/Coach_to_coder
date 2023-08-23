@@ -1,4 +1,4 @@
-# Employee Data Analysis Project
+# Employee Data Analysis Project - Coach to Coder Task 3
 
 Welcome to my Employee Data Analysis project repository! In this project, I delve into company data to perform various tasks related to employee information, salaries, and analysis. I've utilized Python programming to extract insights and solve the challenges presented.
 
