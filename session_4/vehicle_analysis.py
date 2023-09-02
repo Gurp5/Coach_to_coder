@@ -18,7 +18,7 @@ from collections import namedtuple
 
 Car = namedtuple("car", "model, year, price, transmission, mileage, fuel_Type, tax, mpg, engine_Size")
 
-with open("vw.csv", "r") as csvfile:
+with open("vw.csv", "r", encoding="utf8") as csvfile:
     reader = csv.reader(csvfile, skipinitialspace=True)
     next(reader)
     cars = [Car(*row) for row in reader]
