@@ -10,5 +10,5 @@ sentaces_with_population_substring = []
 
 for sentance in split_sentances:
     if("population" in sentance):
-       sentaces_with_population_substring.append(sentance)
+        sentaces_with_population_substring.append(sentance)
 print(sentaces_with_population_substring)
