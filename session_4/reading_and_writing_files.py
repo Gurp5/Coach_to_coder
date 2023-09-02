@@ -92,6 +92,7 @@ print(len(modified_books))
 
 with open("bestsellers_british_book_price.csv", "w") as british_csvfile:
     writer =  csv.writer(british_csvfile, quoting=csv.QUOTE_ALL)
+    writer.writerow(Book("Name", "Author", "User Rating", "Reviews", "Price", "Year", "Genre"))
     for book in modified_books:
         writer.writerow(book)
 
