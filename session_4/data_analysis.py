@@ -23,6 +23,8 @@ number_bestsellers_written = bestsellers.groupby("Author")[["Name"]].count().sor
 
 number_books_genre = bestsellers.groupby("Genre")[["Name"]].count().sort_values("Name", ascending=False).reset_index()
 
+
+
 plt.pie(number_books_genre.Name, labels=number_books_genre.Genre, 
 autopct="%1.1f%%")
 plt.show()

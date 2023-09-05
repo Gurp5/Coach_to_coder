@@ -26,16 +26,41 @@ with open("vw.csv", "r", encoding="utf8") as csvfile:
 # Question 1: What is the most expensive VW car listed?
 
 most_expensive_car = cars[0]
-for car in  cars:
+for car in cars:
     if(int(car.price) > int(most_expensive_car.price)):
         most_expensive_car = car
 print(most_expensive_car)
 
-# 2. Find all the VW Golf models. What is their average price?
+# Question 2: Find all the VW Golf models. What is their average price?
 
-car_price = cars[3]
 car_total_values = 0
-for car in  cars:
+no_golf_models = 0
+for car in cars:
     if(car.model == "Golf"):
-        car_total_values+= car_total_values
+        no_golf_models += 1
+        car_total_values += int(car.price)
+print(no_golf_models)
 print(car_total_values)
+print(car_total_values/no_golf_models)
+
+# Question 3: What is the average milage for VW Polo models registered in 2020?
+
+# car_total_values1 = 0
+# no_golf_models1 = 0
+# for car in cars:
+#     if(car.model == "Golf" and car.year == 2020):
+#         no_golf_models1 += 1
+#         car_total_values1 += float(car.mileage)
+# print(no_golf_models1)
+# print(car_total_values1)
+
+# List comprehension way
+
+car_total_values1 = 0
+no_golf_models1 = 0
+
+Average_miles = [car for car in cars if int(car.year) == 2020 and car.model == "Golf"]
+
+list_len = len(Average_miles)
+
+print(Average_miles)
