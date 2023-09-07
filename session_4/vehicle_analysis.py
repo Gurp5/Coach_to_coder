@@ -69,3 +69,22 @@ total_miles += int(car.mileage)
 Ave_miles = total_miles/list_len
 
 print(f"Question 3 - The average mileage for the VW Polo model is {Ave_miles}")
+
+# print(Average_miles)
+
+# # Extension: Using pandas and matplotlib , create the following:
+# 1. A pie chart showing the distribution between fuel types. (You can use the model column to count occurances!)
+# 2. A bar chart showing the average mileage for each model. (You need to research hpow can you calculate average using pandas!)
+
+# Ex - Question 1
+
+fuel_types_dis = [car for car in cars]
+
+
+with open("vw_fuel_dis.csv", "w") as vw_csvfile:
+    writer =  csv.writer(vw_csvfile, quoting=csv.QUOTE_ALL)
+    writer.writerow(Car("model", "year", "price", "transmission", "mileage", "fuel_Type", "tax", "mpg", "engine_Size"))
+    for car in cars:
+        writer.writerow(car)
+
+# Ex - Question 2
