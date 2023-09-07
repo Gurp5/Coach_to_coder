@@ -9,25 +9,29 @@ car_vis = pd.read_csv("vehicle_analysis_data.csv")
 
 # Ex - Question 1
 
-fuel_dists = car_vis.groupby("fuel_Type")[["model"]].count().sort_values("model").reset_index()
+# fuel_dists = car_vis.groupby("fuel_Type")[["model"]].count().sort_values("model").reset_index()
 
-plt.pie(fuel_dists.model, labels=fuel_dists.fuel_Type, 
-autopct="%1.1f%%")
-plt.show()
+# plt.pie(fuel_dists.model, labels=fuel_dists.fuel_Type, 
+# autopct="%1.1f%%")
+# plt.show()
 
 # Ex - Question 2
 
-number_bestsellers_written = bestsellers.groupby("Author")[["Name"]].count().sort_values("Name", ascending=False).head(10).reset_index()
+average_mileage_by_model = car_vis.groupby("model")["mileage"].mean().reset_index()
 
-# plt.bar(
-# number_bestsellers_written.Author, 
-# number_bestsellers_written.Name,
-# color="maroon",
-# width=0.4
-# )
-# plt.xlabel("Authors")
-# plt.ylabel("Number of best selling books")
-# plt.title("Mt first chart") 
-# plt.show()
+# Sort the resulting DataFrame by average mileage in descending order
+models_by_mileage = average_mileage_by_model.sort_values("mileage", ascending=False)
 
-car_ave_miles = car_vis.groupby("fuel_Type")[["model"]].count().sort_values("model").reset_index()
+# Create a bar chart
+plt.figure(figsize=(10, 6))  # Optional: Adjust the figure size
+plt.bar(models_by_mileage["model"], models_by_mileage["mileage"], color="maroon", width=0.4)
+plt.xlabel("Car Model")
+plt.ylabel("Average Mileage")
+plt.title("Car Models with Average Mileage")
+
+# Rotate x-axis labels for better readability
+plt.xticks(rotation=45)
+
+# Show the plot
+plt.tight_layout()  # Adjust the layout
+plt.show()

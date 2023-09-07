@@ -76,7 +76,7 @@ print(f"Question 3 - The average mileage for the VW Polo model is {Ave_miles}")
 # 1. A pie chart showing the distribution between fuel types. (You can use the model column to count occurances!)
 # 2. A bar chart showing the average mileage for each model. (You need to research hpow can you calculate average using pandas!)
 
-# Ex - Question 1
+# Ex - Question 1 and 2 writing file to analyses the data (new file to quote every data entry, data values rmain the same as the original)
 
 fuel_types_dis = [car for car in cars]
 
@@ -87,4 +87,3 @@ with open("vehicle_analysis_data.csv", "w") as vw_csvfile:
     for car in cars:
         writer.writerow(car)
 
-# Ex - Question 2
