@@ -29,7 +29,7 @@ most_expensive_car = cars[0]
 for car in cars:
     if(int(car.price) > int(most_expensive_car.price)):
         most_expensive_car = car
-print(most_expensive_car)
+print(f"Question 1 - The most expensive model is the '{most_expensive_car.model}'")
 
 # Question 2: Find all the VW Golf models. What is their average price?
 
@@ -39,9 +39,10 @@ for car in cars:
     if(car.model == "Golf"):
         no_golf_models += 1
         car_total_values += int(car.price)
-print(no_golf_models)
-print(car_total_values)
-print(car_total_values/no_golf_models)
+# print(no_golf_models)
+# print(car_total_values)
+Ave = car_total_values/no_golf_models
+print(f"Question 2 - The average price of the VW Golf model is £{Ave}")
 
 # Question 3: What is the average milage for VW Polo models registered in 2020?
 
@@ -58,9 +59,13 @@ print(car_total_values/no_golf_models)
 
 car_total_values1 = 0
 no_golf_models1 = 0
+total_miles = 0
+Average_miles = 0
 
-Average_miles = [car for car in cars if int(car.year) == 2020 and car.model == "Golf"]
+Average_miles = [car for car in cars if int(car.year) == 2020 and car.model == "Polo"]
 
 list_len = len(Average_miles)
+total_miles += int(car.mileage)
+Ave_miles = total_miles/list_len
 
-print(Average_miles)
+print(f"Question 3 - The average mileage for the VW Polo model is {Ave_miles}")
