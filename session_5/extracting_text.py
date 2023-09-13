@@ -11,7 +11,12 @@ all_text_combined = " ".join(all_texts)
 
 individual_sentances = all_text_combined.split(".")
 for sentance in individual_sentances:
-    if("module" in sentance):
+    if("computer" in sentance):
         print(sentance)
+
+# Some cool things to try out and put on GitHub:
+# 1. resize 3 pictures using python - pillow
+# 2. try to read in a word document and do some analysis on the text
+# 3. try to create some audio files using python
 
 

@@ -66,6 +66,7 @@ Average_miles = [car for car in cars if int(car.year) == 2020 and car.model == "
 
 list_len = len(Average_miles)
 total_miles += int(car.mileage)
+print(total_miles)
 Ave_miles = total_miles/list_len
 
 print(f"Question 3 - The average mileage for the VW Polo model is {Ave_miles}")
